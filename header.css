@@ -1,0 +1,15 @@
+header {
+  background-color: pink;
+  height: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img{
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
