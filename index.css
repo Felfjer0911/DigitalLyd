@@ -5,6 +5,10 @@ h1 {
   padding: 30px;
 }
 
+body {
+ background-color: rgb(242, 242, 242);
+}
+
 .container{
  grid-template-columns: repeat(6, 1fr);
  grid-template-rows: repeat(6, 200px);
@@ -13,15 +17,20 @@ h1 {
  margin: auto;
  max-width: 1200px;
  padding: 30px;
+ 
  }
 
 
 .item {
-  border: 3px solid black;
   height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgb(132, 132, 132);
+  background-color: white;
+  
+
 }
 
 .stor {
- grid-column: span 2;
+ grid-column: span 6;
  grid-row: span 1;
 }
