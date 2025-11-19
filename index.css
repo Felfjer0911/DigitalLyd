@@ -1,4 +1,4 @@
-h1 {
+.overskrift {
   color: rgb(253, 137, 157);
   font-size: 70px;
   text-align: center;
@@ -27,8 +27,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 6px 8px rgb(132, 132, 132);
   background-color: white;
-  
-
 }
 
 .stor {
@@ -39,4 +37,11 @@ body {
 .middel {
    grid-column: span 3;
  grid-row: span 1;
+}
+
+.førsteoverskrift {
+  color: black;
+  padding: 50px;
+  font-size: 80px;
+  width: 450px;
 }
