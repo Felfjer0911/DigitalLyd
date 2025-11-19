@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
+    background: #eaeaea;
 }
 
 .page {
@@ -14,36 +14,26 @@ body {
     background: #fff;
 }
 
-/* Topp som ligner enkel nettavis */
+
 .top {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    border-bottom: 1px solid #c7c7c7;
 }
 
 .logo {
-    background: red;
-    color: white;
+    margin: 0;
+    font-size: 24px;
     font-weight: bold;
-    padding: 5px 12px;
-    margin-right: 10px;
 }
 
-.note {
-    font-size: 12px;
-    color: #555;
-}
 
-/* Hovedinnhold: bilder venstre, tekst høyre */
 .content {
     display: flex;
     gap: 20px;
     padding: 20px;
-    align-items: stretch;
 }
 
-/* Bilder */
+
 .left {
     flex: 1;
     display: flex;
@@ -54,23 +44,17 @@ body {
 .left img {
     width: 100%;
     display: block;
-    border-radius: 4px;
 }
 
-/* Artikkel */
+
 .right {
     flex: 2;
 }
 
 .right h1 {
-    font-size: 24px;
-    margin: 0 0 5px;
-}
-
-.meta {
-    font-size: 12px;
-    color: #666;
-    margin-bottom: 15px;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .ingress {
@@ -78,31 +62,17 @@ body {
     margin-bottom: 15px;
 }
 
-.right h2 {
-    font-size: 18px;
-    margin-top: 15px;
-}
-
 .right p {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    line-height: 1.5;
 }
 
-.right ul {
-    margin: 5px 0 15px 20px;
+img {
+    transition: transform 0.35s ease, filter 0.35s ease;
+    border-radius: 10px;
 }
 
-/* Bunntekst */
-.bottom {
-    border-top: 1px solid #ddd;
-    text-align: center;
-    font-size: 12px;
-    color: #555;
-    padding: 10px;
-}
-
-/* Mobil: legg alt under hverandre */
-@media (max-width: 700px) {
-    .content {
-        flex-direction: column;
-    }
+img:hover {
+    transform: scale(1.07);
+    filter: brightness(80%) contrast(100%);
 }
