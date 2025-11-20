@@ -1,9 +1,32 @@
 main{
-    background-color: lightskyblue;
+    background-color: white;
 }
 
 h1{
     color: white;
     font-size: xx-large;
     text-align: center;
+}
+
+.overskrift{
+    background-image: url(Bilder/info_hoved.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    align-items: last baseline;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.h1{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    
+}
+h1{
+    font-size: 70px;
 }
