@@ -39,12 +39,30 @@ h1 {
 }
 
 .s1 aside {
-    border: black solid 2px;
+    
     height: 100%;
+    padding: 20px;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+.link{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.s1 aside a{
+    text-decoration: none;
+    color: black;
+    border-bottom: black solid 1px;
+    font-size: larger;
 }
 
 .s1 article {
-    border: black solid 2px;
+    
     height: 100%;
     padding: 50px;
     display: flex;
@@ -79,7 +97,7 @@ h1 {
 }
 .bilde1{
     padding: 20px;
-    margin-top: 400px;
+    margin-top: 200px;
 }
 
 .bilde2{
