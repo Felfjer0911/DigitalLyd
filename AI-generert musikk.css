@@ -9,7 +9,7 @@ body {
 }
 
 .page {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     background: #fff;
 }
@@ -22,7 +22,7 @@ body {
 
 .logo {
     margin: 0;
-    font-size: 24px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .right h1 {
-    font-size: 26px;
+    font-size: 25px;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -63,7 +63,7 @@ body {
 }
 
 .right p {
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     line-height: 1.5;
 }
 
@@ -75,4 +75,21 @@ img {
 img:hover {
     transform: scale(1.07);
     filter: brightness(80%) contrast(100%);
+}
+
+.side-ad {
+    position: fixed;
+    top: 120px;
+    width: 210px;
+    height: 680px;
+    z-index: 999;
+
+}
+
+.left-ad {
+    left: 10px;
+}
+
+.right-ad {
+    right: 10px;
 }
