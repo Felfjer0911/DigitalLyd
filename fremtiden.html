@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fremtiden.css">
+    <title>Fremtiden</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="index.html">
+                <img src="bilder/logo.png" alt="Logo bilde">
+            </a>
+        </h1>
+
+        <nav>
+            <a href="index.html">Hjem</a>
+        </nav>
+    </header>
+
+    <section class="første-seksjon">
+        <div class="første-innhold">
+            <div class="tekst">
+                <h1>Fremtidens digital lyd</h1>
+                <p>
+                    Digital lyd er i rask utvikling, og nye teknologier gjør lydopplevelser mer realistiske og tilpasset
+                    brukeren. Generativ musikk, som lages i sanntid av algoritmer, brukes blant annet i spill og apper
+                    for å skape musikk som endrer seg etter situasjonen eller brukerens aktiviteter. I tillegg blir
+                    «immersive audio» stadig viktigere i AR og VR, der tredimensjonal lyd gjør virtuelle miljøer mer
+                    levende og ekte.
+
+                    AI brukes også til å endre eller etterligne stemmer gjennom stemmemodulatorer og deepfake-teknologi.
+                    Dette gir nye muligheter innen underholdning og kommunikasjon, men skaper også utfordringer knyttet
+                    til sikkerhet. Samlet sett peker utviklingen mot en fremtid der lyd ikke bare høres, men tilpasses,
+                    reagerer og skaper mer engasjerende opplevelser enn før.
+                </p>
+            </div>
+            <div class="h1-bilde">
+                <img src="Bilder/h1.jpg" alt="Digital lyd">
+            </div>
+        </div>
+    </section>
+
+    <section class="andre-seksjon">
+        <h2>Generativ musikk i spill og apper</h2>
+
+    <div id="gen-accordion" class="kort">
+        <p>
+            Generativ musikk er musikk som skapes i sanntid av algoritmer og kunstig intelligens, og som kontinuerlig
+            formes av situasjonen brukeren befinner seg i. I stedet for å være et ferdig innspilt lydspor, fungerer den
+            som et levende system som reagerer på bevegelser, valg, stemning og miljø. Den kan endre tempo, klang, rytme
+            og melodi etter behov, noe som gjør hver opplevelse unik.
+            I spill brukes generativ musikk for å styrke følelsen av tilstedeværelse. Rolige områder får myke,
+            atmosfæriske lyder, mens intense øyeblikk gradvis bygger opp mer dramatisk musikk. Overgangen skjer sømløst,
+            noe som gjør at lydsporet føles som en naturlig del av spillverdenen, nesten som om det samspiller med
+            spillerens handlinger.
+            Teknologien brukes også i apper utenfor spill, blant annet i meditasjons- og treningsapper. Her skaper
+            algoritmene musikk som tilpasses pusterytme, konsentrasjonsnivå eller aktivitet, og gir brukeren en mer
+            personlig opplevelse. Innen kunst og interaktive installasjoner brukes generativ lyd for å forme rom som
+            reagerer direkte på publikum.
+            Fordelen er at musikken blir personlig, dynamisk og skapt i øyeblikket, noe som gir en mer levende og
+            engasjerende opplevelse enn tradisjonelle, statiske lydspor.
+        </p>
+
+        <button id="gen-knapp">Les mer</button>
+    </div>
+    </section>
+
+<script>
+    const knapp2 = document.getElementById("gen-knapp");
+    const accordion2 = document.getElementById("gen-accordion");
+
+    let lesMer2 = true;
+
+    function toggleAccordion2() {
+        accordion2.classList.toggle("kort");
+        lesMer2 = !lesMer2;
+
+        if (lesMer2) {
+            knapp2.innerHTML = "Les mer";
+        } else {
+            knapp2.innerHTML = "Les mindre";
+        }
+    }
+
+    knapp2.addEventListener("click", toggleAccordion2);
+</script>
+</body>
+
+</html>

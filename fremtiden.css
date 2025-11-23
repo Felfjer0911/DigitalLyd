@@ -1,0 +1,128 @@
+body {
+    background-color: #f2e9e4;
+}
+
+header {
+    background-color: #c9ada7;
+    padding: 4px 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 50px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header img {
+    height: 90px;
+    margin-left: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.første-seksjon {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #f2e9e4;
+}
+
+.første-innhold {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.tekst {
+    flex: 1 1 500px;
+}
+
+.tekst h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #22223b;
+}
+
+.tekst p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #4a4e69;
+}
+
+.h1-bilde {
+    flex: 1 1 500px;
+}
+
+.h1-bilde img {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .h1-innhold {
+        flex-direction: column;
+    }
+
+    .h1-bilde, .h1-tekst {
+        flex: 1 1 100%;
+    }
+}
+
+.andre-seksjon {
+    background-color: #9a8c98; 
+    color: #f2e9e4; 
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.andre-seksjon h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: transparent;   
+    -webkit-text-stroke: 1px #f2e9e4; 
+    text-transform: uppercase; 
+}
+
+.andre-seksjon p {
+    max-width: 700px; 
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#gen-accordion {
+    max-width: 700px;
+    margin: 20px auto 0;
+}
+
+#gen-accordion.kort p {
+    height: 150px;
+    overflow: hidden;
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
+    -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent);
+}
+
+#gen-accordion button {
+    margin-top: 15px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background: #ffffff40;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+#gen-accordion button:hover {
+    background: #ffffff70;
+}
