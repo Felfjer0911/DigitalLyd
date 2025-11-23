@@ -126,3 +126,139 @@ nav a {
 #gen-accordion button:hover {
     background: #ffffff70;
 }
+
+.tredje-seksjon {
+    width: 100%
+    padding 80px 20px;
+    background-color: #c9ada7;
+}
+
+.tredje-innhold {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.tredje-bilde {
+    flex: 1 1 500px;
+}
+
+.tredje-bilde img {
+    width: 100%;
+}
+
+.tredje-tekst {
+    flex: 1 1 500px;
+    text-align: left;
+}
+
+.tredje-tekst h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #22223b;
+}
+
+h3 {
+    font-size: 22px;
+    color: #22223b;
+}
+
+.tredje-tekst p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #4a4e69;
+}
+
+@media (max-width: 900px) {
+    .tredje-innhold {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tredje-tekst {
+        text-align: center;
+    }
+}
+
+.tre-bilder-seksjon {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tre-bilder-seksjon .kort {
+    background-color: #f2e9e4;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+}
+
+.tre-bilder-seksjon img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.tre-bilder-seksjon h3 {
+    color: #22223b;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.tre-bilder-seksjon p {
+    color: #4a4e69;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media (max-width: 900px) {
+    .tre-bilder-seksjon {
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #22223b;
+    color: #f2e9e4;
+    padding: 20px 10px;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #f2e9e4;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}

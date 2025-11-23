@@ -47,47 +47,100 @@
     <section class="andre-seksjon">
         <h2>Generativ musikk i spill og apper</h2>
 
-    <div id="gen-accordion" class="kort">
-        <p>
-            Generativ musikk er musikk som skapes i sanntid av algoritmer og kunstig intelligens, og som kontinuerlig
-            formes av situasjonen brukeren befinner seg i. I stedet for å være et ferdig innspilt lydspor, fungerer den
-            som et levende system som reagerer på bevegelser, valg, stemning og miljø. Den kan endre tempo, klang, rytme
-            og melodi etter behov, noe som gjør hver opplevelse unik.
-            I spill brukes generativ musikk for å styrke følelsen av tilstedeværelse. Rolige områder får myke,
-            atmosfæriske lyder, mens intense øyeblikk gradvis bygger opp mer dramatisk musikk. Overgangen skjer sømløst,
-            noe som gjør at lydsporet føles som en naturlig del av spillverdenen, nesten som om det samspiller med
-            spillerens handlinger.
-            Teknologien brukes også i apper utenfor spill, blant annet i meditasjons- og treningsapper. Her skaper
-            algoritmene musikk som tilpasses pusterytme, konsentrasjonsnivå eller aktivitet, og gir brukeren en mer
-            personlig opplevelse. Innen kunst og interaktive installasjoner brukes generativ lyd for å forme rom som
-            reagerer direkte på publikum.
-            Fordelen er at musikken blir personlig, dynamisk og skapt i øyeblikket, noe som gir en mer levende og
-            engasjerende opplevelse enn tradisjonelle, statiske lydspor.
-        </p>
+        <div id="gen-accordion" class="kort">
+            <p>
+                Generativ musikk er musikk som skapes i sanntid av algoritmer og kunstig intelligens, og som
+                kontinuerlig
+                formes av situasjonen brukeren befinner seg i. I stedet for å være et ferdig innspilt lydspor, fungerer
+                den
+                som et levende system som reagerer på bevegelser, valg, stemning og miljø. Den kan endre tempo, klang,
+                rytme
+                og melodi etter behov, noe som gjør hver opplevelse unik.
+                I spill brukes generativ musikk for å styrke følelsen av tilstedeværelse. Rolige områder får myke,
+                atmosfæriske lyder, mens intense øyeblikk gradvis bygger opp mer dramatisk musikk. Overgangen skjer
+                sømløst,
+                noe som gjør at lydsporet føles som en naturlig del av spillverdenen, nesten som om det samspiller med
+                spillerens handlinger.
+                Teknologien brukes også i apper utenfor spill, blant annet i meditasjons- og treningsapper. Her skaper
+                algoritmene musikk som tilpasses pusterytme, konsentrasjonsnivå eller aktivitet, og gir brukeren en mer
+                personlig opplevelse. Innen kunst og interaktive installasjoner brukes generativ lyd for å forme rom som
+                reagerer direkte på publikum.
+                Fordelen er at musikken blir personlig, dynamisk og skapt i øyeblikket, noe som gir en mer levende og
+                engasjerende opplevelse enn tradisjonelle, statiske lydspor.
+            </p>
 
-        <button id="gen-knapp">Les mer</button>
-    </div>
+            <button id="gen-knapp">Les mer</button>
+        </div>
     </section>
 
-<script>
-    const knapp2 = document.getElementById("gen-knapp");
-    const accordion2 = document.getElementById("gen-accordion");
+    <script src="fremtiden.js" defer></script>
 
-    let lesMer2 = true;
+    <section class="tredje-seksjon">
+        <div class="tredje-innhold">
+            <div class="tredje-bilde">
+                <img src="Bilder/tredje.png" alt="Immersive audio">
+            </div>
 
-    function toggleAccordion2() {
-        accordion2.classList.toggle("kort");
-        lesMer2 = !lesMer2;
+            <div class="tredje-tekst">
+                <h2>«Immersive audio» for AR/VR</h2>
+                <h3>(romlig og tredimensjonal lyd)</h3>
+                <p>
+                    Immersive audio, eller tredimensjonal lyd, er en teknologi som skaper en lydopplevelse der lydene
+                    oppleves som
+                    å komme fra forskjellige retninger og avstander, akkurat som i den virkelige verden. Dette oppnås
+                    ved hjelp av
+                    avanserte opptaksteknikker og lydbehandling som simulerer hvordan lyd bølger beveger seg i rommet.
+                    I AR (augmented reality) og VR (virtual reality) er immersive audio avgjørende for å skape en
+                    følelse av
+                    tilstedeværelse. Når brukeren beveger hodet eller kroppen, justeres lydene i sanntid for å matche
+                    deres nye
+                    posisjon, noe som gir en mer realistisk og engasjerende opplevelse. For eksempel kan lyden av
+                    fottrinn eller
+                    vind endres basert på hvor brukeren befinner seg i det virtuelle miljøet.
+                    Denne teknologien brukes i spill, simuleringer, utdanning og underholdning for å forbedre
+                    brukeropplevelsen.
+                    Immersive audio bidrar til å gjøre virtuelle verdener mer levende og troverdige, noe som øker
+                    følelsen av
+                    involvering og realisme.
+                </p>
+            </div>
+    </section>
 
-        if (lesMer2) {
-            knapp2.innerHTML = "Les mer";
-        } else {
-            knapp2.innerHTML = "Les mindre";
-        }
-    }
+    <section class="tre-bilder-seksjon">
+        <div class="kort">
+            <img src="Bilder/Lydkomprimering og formater.png" alt="Lydkomprimering og lydformater">
+            <h3>Lydkomprimering og lydformater</h3>
+            <p>Lydkomprimering og lydformater er viktig i digital lyd fordi det bestemmer både kvalitet og filstørrelse.
+                Formater som MP3 og AAC komprimerer lyden og fjerner noe informasjon for å spare plass, mens FLAC og WAV
+                beholder all lydkvalitet uten tap. Derfor brukes komprimerte formater ofte til streaming, mens
+                ukomprimerte formater brukes i profesjonell produksjon.</p>
+        </div>
+        <div class="kort">
+            <img src="bilder/2bilde.png" alt="Digital signalbehandling">
+            <h3>Digital signalbehandling (DSP)</h3>
+            <p>Digital signalbehandling (DSP) handler om hvordan lyd endres og forbedres ved hjelp av digitale verktøy.
+                Effekter som EQ, kompressor, reverb og autotune brukes for å forme lyden, enten det er i musikk, gaming,
+                podkaster eller videosamtaler. DSP gjør det mulig å tilpasse lyd til ulike miljøer og behov.</p>
+        </div>
+        <div class="kort">
+            <img src="bilder/3bilde.png" alt="Spatial Audio og surroundteknologi">
+            <h3>Spatial Audio og surroundteknologi</h3>
+            <p>Spatial Audio og moderne surroundteknologi, som Dolby Atmos, gir en tredimensjonal lydopplevelse. Her
+                plasseres lyder rundt lytteren i et 360-graders rom, noe som gjør film, spill og til og med musikk mer
+                realistisk og engasjerende. Denne teknologien blir stadig vanligere både på kino og i hodetelefoner.</p>
+        </div>
+    </section>
 
-    knapp2.addEventListener("click", toggleAccordion2);
-</script>
 </body>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Lydteknologi. Alle rettigheter reservert.</p>
+        <div class="footer-links">
+            <a href="index.html">Hjem</a>
+            <a href="#">Tilbake til topp</a>
+        </div>
+    </div>
+</footer>
 
 </html>
