@@ -122,6 +122,11 @@ nav a {
     display: block;
 }
 
+.primary-video-link img {
+    width: 100%;
+    display: block;
+}
+
 .primary-video-link .play-icon {
     position: absolute;
     top: 50%;
@@ -194,17 +199,17 @@ nav a {
 }
 
 .headset-tips ol {
-    list-style-position: inside; /* nummereringen starter innenfor teksten */
-    padding-left: 0;             /* fjerner ekstra venstre-padding */
+    list-style-position: inside;
+    padding-left: 0;
 }
 
 .headset-tips ol li {
-    margin-bottom: 15px;        /* litt luft mellom punktene */
-    text-align: left;           /* beholder punkttekst venstrejustert for lesbarhet */
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 .headset-tips ol li strong {
-    color: #111;                /* fremhever punktoverskriften */
+    color: #111; 
 }
 
 h5 {
@@ -324,11 +329,9 @@ h5 {
     background-color: #fff;
 }
 
-
-
 footer {
-    background-color: #222; /* mørk bakgrunn */
-    color: #fff; /* hvit tekst */
+    background-color: #222;
+    color: #fff;
     padding: 20px 10px;
     font-size: 0.9em;
 }
