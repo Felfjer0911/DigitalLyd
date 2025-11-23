@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #eaeaea;
     font-size: 15px;
@@ -35,26 +36,37 @@ header img {
 
 
 .top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
     border-bottom: 1px solid #c7c7c7;
 }
 
-.logo {
-    margin: 0;
-    font-size: 25px;
-    font-weight: bold;
+.top img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
 }
 
+.top nav {
+    margin: 5px 0;
+}
 
 .content {
     display: flex;
     gap: 20px;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
+.venstre, .høyre {
+    flex: 1 1 100%;
+    min-width: 0;
+}
 
 .venstre {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -62,12 +74,23 @@ header img {
 
 .venstre img {
     width: 100%;
+    height: auto;
     display: block;
 }
 
 
 .høyre {
-    flex: 2;
+    flex: 2 1 100%;
+}
+
+@media (min-width: 768px) {
+    .venstre {
+        flex: 1;
+    }
+
+    .høyre {
+        flex: 2;
+    }
 }
 
 .høyre h1 {
@@ -117,7 +140,7 @@ img:hover {
 
 @media (max-width: 1100px) {
     .side-ad {
-        position: static;
+        position: relative;
         width: 100%;
         height: auto;
         max-width: 320px;
@@ -125,12 +148,25 @@ img:hover {
         display: block;
     }
 
-    .content {
-        flex-direction: column;
+    .venstre-ad, .høyre-ad {
+        left: auto;
+        right: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .side-ad {
+        display: none;
     }
 }
 
 .video-seksjon {
     padding: 40px 0;
     text-align: center;
+}
+
+.video-seksjon video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
