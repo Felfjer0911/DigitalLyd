@@ -88,3 +88,8 @@ body {
 .høyre-ad {
     right: 10px;
 }
+
+@media (max-width: 1400px) {
+    .side-ad {
+        display: none;
+    }
