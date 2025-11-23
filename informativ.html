@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="universel.css">
     <link rel="stylesheet" href="info.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -29,30 +32,30 @@
         <section class="s1">
             <aside class="link">
                 <div class="">
-                    <a href="#">Digitale lydopptak</a>
+                    <a href="#lydoptak">Digitale lydopptak</a>
                 </div>
                 <div class="">
-                    <a href="#">Opptak av lyd</a>
+                    <a href="#opptak">Opptak av lyd</a>
                 </div>
                 <div class="">
-                    <a href="#">Digitalisering av lyd</a>
+                    <a href="#digitalisering">Digitalisering av lyd</a>
                 </div>
                 <div class="">
-                    <a href="#">Lydkvalitet</a>
+                    <a href="#kvalitet">Lydkvalitet</a>
                 </div>
                 <div class="">
-                    <a href="#">Komprimering av lyd</a>
+                    <a href="#komprimering">Komprimering av lyd</a>
                 </div>
                 <div class="">
-                    <a href="#">Høye frekvenser</a>
+                    <a href="#frekvens">Høye frekvenser</a>
                 </div>
                 <div class="">
-                    <a href="#">Hørsel og opplevd lydkvalitet</a>
+                    <a href="#opplevd">Hørsel og opplevd lydkvalitet</a>
                 </div>
 
             </aside>
             <article>
-                <div class="lydoptak">
+                <div class="lydoptak tekststor" id="lydoptak">
                     <h2>Digitale lydopptak</h2>
                     <p>Digitale lydopptak er metoder for å registrere og lagre lyd som digitale data. Overgangen fra
                         analoge
@@ -62,54 +65,315 @@
                         og tapfri kopiering, noe som har gjort teknologien dominerende i moderne lydbruk.</p>
                 </div>
 
-                <div class="opptak">
-                    <h2>Opptak av lyd</h2>
+                <div class="opptak" id="opptak">
 
-                    <p>Lyd oppstår når et objekt vibrerer og setter luftmolekyler i bevegelse som trykkbølger. For å
-                        fange
-                        disse bølgene brukes mikrofoner, som omdanner variasjoner i lufttrykk til et elektrisk signal.
-                        Mikrofoner finnes i mange typer, blant annet dynamiske og kondensatormikrofoner, som egner seg
-                        til
-                        ulike bruksområder. I et digitalt opptakssystem sendes det elektriske signalet videre til en
-                        analog-til-digital-omformer (A/D-omformer), som forbereder signalet på digital behandling.
-                        Kvaliteten på mikrofonen, opptaksrommet og forsterkerutstyret spiller også en stor rolle for
-                        sluttresultatet.</p>
+                    <div id="img1">
+
+                    </div>
+
+                    <script>
+                        const litenHTML = `
+                                <div class="opptak">
+                                    <div class="tekst">
+                                        <h2>Opptak av lyd</h2>
+
+                                        <p>Lyd oppstår når et objekt vibrerer og setter luftmolekyler i bevegelse som trykkbølger. For å
+                                            fange
+                                            disse bølgene brukes mikrofoner, som omdanner variasjoner i lufttrykk til et elektrisk
+                                            signal.
+                                            Mikrofoner finnes i mange typer, blant annet dynamiske og kondensatormikrofoner, som egner
+                                            seg
+                                            til
+                                            ulike bruksområder. I et digitalt opptakssystem sendes det elektriske signalet videre til en
+                                            analog-til-digital-omformer (A/D-omformer), som forbereder signalet på digital behandling.
+                                            Kvaliteten på mikrofonen, opptaksrommet og forsterkerutstyret spiller også en stor rolle for
+                                            sluttresultatet.</p>
+                                    </div>
+                                    <div class="bilde1 liten">
+                                        <div class="img1 liten">
+                                            <img src="Bilder/lydstudio.png" alt="">
+                                        </div>
+
+                                        <div class="button">
+                                            <button onclick="endrestorelse()">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </button>
+                                        </div>
+                                        
+
+                                        <p>
+                                            Mikrofon i et lydstudio, med digital bølgeform synlig på skjerm. Bildet viser hvordan
+                                            akustiske
+                                            trykkbølger fanges av mikrofonen og omformes til et elektrisk signal som senere
+                                            digitaliseres.
+                                            Illustrasjonen er relevant fordi den viser selve opptakssituasjonen i moderne digital
+                                            lydproduksjon.
+                                        </p>
+                                    </div>
+                                </div>
+                            `;
+
+                        const storHTML = `
+                                <div class="opptak storopptak">
+                                    <div class="tekst stortekst">
+                                        <h2>Opptak av lyd</h2>
+
+                                        <p>Lyd oppstår når et objekt vibrerer og setter luftmolekyler i bevegelse som trykkbølger. For å
+                                            fange
+                                            disse bølgene brukes mikrofoner, som omdanner variasjoner i lufttrykk til et elektrisk
+                                            signal.
+                                            Mikrofoner finnes i mange typer, blant annet dynamiske og kondensatormikrofoner, som egner
+                                            seg
+                                            til
+                                            ulike bruksområder. I et digitalt opptakssystem sendes det elektriske signalet videre til en
+                                            analog-til-digital-omformer (A/D-omformer), som forbereder signalet på digital behandling.
+                                            Kvaliteten på mikrofonen, opptaksrommet og forsterkerutstyret spiller også en stor rolle for
+                                            sluttresultatet.</p>
+                                    </div>
+                                    <div class="bilde1 storbilde1">
+                                        <div class="img1">
+                                            <img src="Bilder/lydstudio.png" alt="">
+                                        </div>
+
+                                        <div class="button">
+                                            <button onclick="endrestorelse()">
+                                                <i class="fa-solid fa-magnifying-glass-minus"></i>
+                                            </button>
+                                        </div>
+                                        
+
+                                        <p>
+                                            Mikrofon i et lydstudio, med digital bølgeform synlig på skjerm. Bildet viser hvordan
+                                            akustiske
+                                            trykkbølger fanges av mikrofonen og omformes til et elektrisk signal som senere
+                                            digitaliseres.
+                                            Illustrasjonen er relevant fordi den viser selve opptakssituasjonen i moderne digital
+                                            lydproduksjon.
+                                        </p>
+                                    </div>
+                                </div>
+                            `;
+
+
+                        var liten = true;
+                        document.getElementById('img1').innerHTML = litenHTML;
+
+                        function endrestorelse() {
+                            if (liten) {
+                                liten = false;
+                                document.getElementById('img1').innerHTML = storHTML;
+                            } else {
+                                liten = true;
+                                document.getElementById('img1').innerHTML = litenHTML;
+                            }
+                        }
+                    </script>
+
+
+
+
+
                 </div>
 
 
-                <div class="digitalisering">
-                    <h2>Digitalisering av lyd</h2>
+                <div class="digitalisering" id="digitalisering">
+                    <div id="img2"></div>
 
-                    <p>Digitalisering av lyd innebærer å måle det analoge signalet med jevne tidsintervaller, en prosess
-                        som
-                        kalles sampling. Hver måling lagres som en tallverdi som beskriver signalets styrke, i en
-                        prosess
-                        som kalles kvantisering. De to viktigste tekniske parameterne er samplingsfrekvens og bitdybde.
-                        Samplingsfrekvensen angir hvor mange ganger per sekund signalet måles, mens bitdybden bestemmer
-                        hvor
-                        mange nivåer hver måling kan ha. Jo høyere samplingsfrekvens og bitdybde, desto mer informasjon
-                        om
-                        bølgeformen blir beholdt. Selv små endringer i disse verdiene kan påvirke dynamikk, detaljnivå
-                        og
-                        støy i opptaket.</p>
+                    <script>
+                        const litenHTML2 = `
+                                <div class="opptak">
+                                    <div class="tekst">
+                                        <h2>Digitalisering av lyd</h2>
+
+                                                <p>Digitalisering av lyd innebærer å måle det analoge signalet med jevne tidsintervaller, en prosess
+                                                    som
+                                                    kalles sampling. Hver måling lagres som en tallverdi som beskriver signalets styrke, i en
+                                                    prosess
+                                                    som kalles kvantisering. De to viktigste tekniske parameterne er samplingsfrekvens og bitdybde.
+                                                    Samplingsfrekvensen angir hvor mange ganger per sekund signalet måles, mens bitdybden bestemmer
+                                                    hvor
+                                                    mange nivåer hver måling kan ha. Jo høyere samplingsfrekvens og bitdybde, desto mer informasjon
+                                                    om
+                                                    bølgeformen blir beholdt. Selv små endringer i disse verdiene kan påvirke dynamikk, detaljnivå
+                                                    og
+                                                    støy i opptaket.</p>
+                                    </div>
+
+                                    <div class="bilde1 liten">
+                                        <div class="img2 liten">
+                                            <img src="Bilder/Analog_vs_Digital.png" alt="">
+                                        </div>
+
+                                        <div class="button">
+                                            <button onclick="endrestorelse2()">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </button>
+                                        </div>
+
+                                        <p>
+                                            Analogt lydsignal (venstre) sammenlignet med digital sampling og kvantisering (høyre). Bildet viser hvordan et kontinuerlig lydsignal deles opp i diskrete målepunkter med bestemte nivåer. Illustrasjonen gjør det lettere å forstå hvordan digitalisering av lyd foregår.
+                                        </p>
+                                    </div>
+                                </div>
+                            `;
+
+                        const storHTML2 = `
+                                <div class="opptak storopptak">
+                                    <div class="tekst stortekst">
+                                        <h2>Digitalisering av lyd</h2>
+
+                                                <p>Digitalisering av lyd innebærer å måle det analoge signalet med jevne tidsintervaller, en prosess
+                                                    som
+                                                    kalles sampling. Hver måling lagres som en tallverdi som beskriver signalets styrke, i en
+                                                    prosess
+                                                    som kalles kvantisering. De to viktigste tekniske parameterne er samplingsfrekvens og bitdybde.
+                                                    Samplingsfrekvensen angir hvor mange ganger per sekund signalet måles, mens bitdybden bestemmer
+                                                    hvor
+                                                    mange nivåer hver måling kan ha. Jo høyere samplingsfrekvens og bitdybde, desto mer informasjon
+                                                    om
+                                                    bølgeformen blir beholdt. Selv små endringer i disse verdiene kan påvirke dynamikk, detaljnivå
+                                                    og
+                                                    støy i opptaket.
+                                                </p>
+                                    </div>
+
+                                    <div class="bilde1 storbilde1">
+                                        <div class="img2">
+                                            <img src="Bilder/Analog_vs_Digital.png" alt="">
+                                        </div>
+
+                                        <div class="button">
+                                            <button onclick="endrestorelse2()">
+                                                <i class="fa-solid fa-magnifying-glass-minus"></i>
+                                            </button>
+                                        </div>
+
+                                        <p>
+                                            Analogt lydsignal (venstre) sammenlignet med digital sampling og kvantisering (høyre). Bildet viser hvordan et kontinuerlig lydsignal deles opp i diskrete målepunkter med bestemte nivåer. Illustrasjonen gjør det lettere å forstå hvordan digitalisering av lyd foregår.
+                                        </p>
+                                    </div>
+                                </div>
+                            `;
+
+                        let liten2 = true;
+
+                        document.getElementById("img2").innerHTML = litenHTML2;
+
+                        function endrestorelse2() {
+                            if (liten2) {
+                                liten2 = false;
+                                document.getElementById("img2").innerHTML = storHTML2;
+                            } else {
+                                liten2 = true;
+                                document.getElementById("img2").innerHTML = litenHTML2;
+                            }
+                        }
+                    </script>
                 </div>
 
-                <div class="kvalitet">
-                    <h2>Lydkvalitet</h2>
+                <div class="kvalitet" id="kvalitet">
 
-                    <p>Lydkvalitet i digitale systemer avhenger av både tekniske spesifikasjoner og hvordan opptaket
-                        gjennomføres. En høy samplingsfrekvens gjør det mulig å gjengi høyere frekvenser uten
-                        forvrengning,
-                        mens en større bitdybde gir et bredere dynamikkområde, mindre kvantiseringsstøy og renere lyd,
-                        spesielt i svake partier. Profesjonelle lydformater, som brukes i studioer og filmproduksjon,
-                        benytter ofte 48 kHz eller 96 kHz samplingsfrekvens og 24 bits bitdybde for å sikre at selv
-                        svært
-                        små detaljer i signalet bevares. Likevel er det viktig å understreke at lydkvalitet også
-                        påvirkes av
-                        faktorer som mikrofonteknikk, romakustikk og etterbehandling.</p>
+
+
+                    <div id="img3"></div>
+
+                    <script>
+                        const litenHTML3 = `
+                                    <div class="opptak">
+                                        <div class="tekst">
+                                            <h2>Lydkvalitet</h2>
+
+                                            <p>Lydkvalitet i digitale systemer avhenger av både tekniske spesifikasjoner og hvordan opptaket
+                                                gjennomføres. En høy samplingsfrekvens gjør det mulig å gjengi høyere frekvenser uten
+                                                forvrengning,
+                                                mens en større bitdybde gir et bredere dynamikkområde, mindre kvantiseringsstøy og renere lyd,
+                                                spesielt i svake partier. Profesjonelle lydformater, som brukes i studioer og filmproduksjon,
+                                                benytter ofte 48 kHz eller 96 kHz samplingsfrekvens og 24 bits bitdybde for å sikre at selv
+                                                svært
+                                                små detaljer i signalet bevares. Likevel er det viktig å understreke at lydkvalitet også
+                                                påvirkes av
+                                                faktorer som mikrofonteknikk, romakustikk og etterbehandling.
+                                            </p>
+                                        </div>
+
+                                        <div class="bilde1 liten">
+                                            <div class="img3 liten">
+                                                <img src="Bilder/lydbolge.gif" alt="">
+                                            </div>
+
+                                            <div class="button">
+                                                <button onclick="endrestorelse3()">
+                                                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                                </button>
+                                            </div>
+
+                                            <p>
+                                                Digitalt signal vist som trappetrinn-formede nivåer, som illustrerer kvantisering. Jo flere
+                                                nivåer (bitdybde), desto mer nøyaktig representeres det originale lydsignalet. Bildet forklarer
+                                                hvorfor bitdybde påvirker dynamikk og detaljnivå i digitale lydopptak.
+                                            </p>
+                                        </div>
+                                    </div>
+                                `;
+
+                        const storHTML3 = `
+                                    <div class="opptak storopptak">
+                                        <div class="tekst stortekst">
+                                            <h2>Opptak av lyd</h2>
+
+                                            <p>
+                                                Lydkvalitet i digitale systemer avhenger av både tekniske spesifikasjoner og hvordan opptaket
+                                                gjennomføres. En høy samplingsfrekvens gjør det mulig å gjengi høyere frekvenser uten
+                                                forvrengning,
+                                                mens en større bitdybde gir et bredere dynamikkområde, mindre kvantiseringsstøy og renere lyd,
+                                                spesielt i svake partier. Profesjonelle lydformater, som brukes i studioer og filmproduksjon,
+                                                benytter ofte 48 kHz eller 96 kHz samplingsfrekvens og 24 bits bitdybde for å sikre at selv
+                                                svært
+                                                små detaljer i signalet bevares. Likevel er det viktig å understreke at lydkvalitet også
+                                                påvirkes av
+                                                faktorer som mikrofonteknikk, romakustikk og etterbehandling.
+                                            </p>
+                                        </div>
+
+                                        <div class="bilde1 storbilde1">
+                                            <div class="img3">
+                                                <img src="Bilder/lydbolge.gif" alt="">
+                                            </div>
+
+                                            <div class="button">
+                                                <button onclick="endrestorelse3()">
+                                                    <i class="fa-solid fa-magnifying-glass-minus"></i>
+                                                </button>
+                                            </div>
+
+                                            <p>
+                                                Digitalt signal vist som trappetrinn-formede nivåer, som illustrerer kvantisering. Jo flere
+                                                nivåer (bitdybde), desto mer nøyaktig representeres det originale lydsignalet. Bildet forklarer
+                                                hvorfor bitdybde påvirker dynamikk og detaljnivå i digitale lydopptak.
+                                            </p>
+                                        </div>
+                                    </div>
+                                `;
+
+                        let liten3 = true;
+
+                        document.getElementById("img3").innerHTML = litenHTML3;
+
+                        function endrestorelse3() {
+                            if (liten3) {
+                                liten3 = false;
+                                document.getElementById("img3").innerHTML = storHTML3;
+                            } else {
+                                liten3 = true;
+                                document.getElementById("img3").innerHTML = litenHTML3;
+                            }
+                        }
+                    </script>
+
+
                 </div>
 
-                <div class="komprimering">
+                <div class="komprimering tekststor" id="komprimering">
                     <h2>Komprimering av lyd</h2>
 
                     <p>Digitale lydfiler kan være svært store, særlig dersom samplingsfrekvensen og bitdybden er høy.
@@ -126,7 +390,7 @@
 
                 </div>
 
-                <div class="frekvens">
+                <div class="frekvens tekststor" id="frekvens">
                     <h2>Høye frekvenser</h2>
 
                     <p>Evnen til å gjengi høye frekvenser i et digitalt lydsystem begrenses av samplingsfrekvensen.
@@ -142,7 +406,7 @@
                     </p>
                 </div>
 
-                <div class="opplevd">
+                <div class="opplevd tekststor" id="opplevd">
                     <h2>Hørsel og opplevd lydkvalitet</h2>
 
                     <p>
@@ -162,29 +426,7 @@
                 </div>
 
             </article>
-            <aside class="images">
-                <div class="bilde1">
-                    <img src="Bilder/lydstudio.png" alt="">
 
-                    <p>Mikrofon i et lydstudio, med digital bølgeform synlig på skjerm. Bildet viser hvordan akustiske
-                        trykkbølger fanges av mikrofonen og omformes til et elektrisk signal som senere digitaliseres.
-                        Illustrasjonen er relevant fordi den viser selve opptakssituasjonen i moderne digital
-                        lydproduksjon.</p>
-                </div>
-                <div class="bilde2">
-                    <img src="Bilder/Analog_vs_Digital.png" alt="">
-                    <p>Analogt lydsignal (venstre) sammenlignet med digital sampling og kvantisering (høyre). Bildet
-                        viser hvordan et kontinuerlig lydsignal deles opp i diskrete målepunkter med bestemte nivåer.
-                        Illustrasjonen gjør det lettere å forstå hvordan digitalisering av lyd foregår.</p>
-                </div>
-                <div class="bilde3">
-                    <img src="Bilder/lydbolge.gif" alt="">
-
-                    <p>Digitalt signal vist som trappetrinn-formede nivåer, som illustrerer kvantisering. Jo flere
-                        nivåer (bitdybde), desto mer nøyaktig representeres det originale lydsignalet. Bildet forklarer
-                        hvorfor bitdybde påvirker dynamikk og detaljnivå i digitale lydopptak.</p>
-                </div>
-            </aside>
         </section>
     </main>
 </body>
