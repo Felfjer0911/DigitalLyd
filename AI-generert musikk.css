@@ -6,12 +6,17 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #eaeaea;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 .page {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 20px auto;
     background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
 }
 
 
@@ -52,19 +57,21 @@ body {
 }
 
 .høyre h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .ingress {
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .høyre p {
-    margin-bottom: 15px;
-    line-height: 1.5;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    max-width: 70ch;
 }
 
 img {
@@ -73,8 +80,8 @@ img {
 }
 
 img:hover {
-    transform: scale(1.07);
-    filter: brightness(80%) contrast(100%);
+    transform: scale(1.04);
+    filter: brightness(90%) contrast(100%);
 }
 
 .side-ad {
@@ -87,9 +94,29 @@ img:hover {
 }
 
 .venstre-ad {
-    left: 10px;
+    left: -70px;
 }
 
 .høyre-ad {
-    right: 10px;
+    right: -70px;
+}
+
+@media (max-width: 1100px) {
+    .side-ad {
+        position: static;
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+.video-seksjon {
+    padding: 40px 0;
+    text-align: center;
 }
