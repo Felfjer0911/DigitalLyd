@@ -10,6 +10,20 @@ body {
     line-height: 1.5;
 }
 
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 8px 40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 50px;
+}
+
+header img {
+    height: 100px;
+    margin-left: 40px;
+}
+
 .page {
     max-width: 1200px;
     margin: 20px auto;
