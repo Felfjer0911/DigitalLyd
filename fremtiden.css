@@ -126,3 +126,60 @@ nav a {
 #gen-accordion button:hover {
     background: #ffffff70;
 }
+
+.tredje-seksjon {
+    width: 100%
+    padding: 80px 20px;
+    background-color: #c9ada7;
+}
+
+.tredje-innhold {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.tredje-bilde {
+    flex: 1 1 500px;
+}
+
+.tredje-bilde img {
+    width: 100%;
+}
+
+.tredje-tekst {
+    flex: 1 1 500px;
+    text-align: left;
+}
+
+.tredje-tekst h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #22223b;
+}
+
+h3 {
+    font-size: 22px;
+    color: #22223b;
+}
+
+.tredje-tekst p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #4a4e69;
+}
+
+@media (max-width: 900px) {
+    .tredje-innhold {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tredje-tekst {
+        text-align: center;
+    }
+}
+
