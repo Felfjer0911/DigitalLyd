@@ -12,7 +12,7 @@ body {
 }
 
 .page {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 20px auto;
     background: #fff;
     border-radius: 12px;
@@ -118,11 +118,11 @@ img:hover {
 }
 
 .venstre-ad {
-    left: -70px;
+    left: 10px;
 }
 
 .høyre-ad {
-    right: -70px;
+    right: 10px;
 }
 
 @media (max-width: 1100px) {
@@ -148,21 +148,30 @@ img:hover {
     }
 }
 
-.video-seksjon {
-    padding: 40px 0;
+.videobilde {
     text-align: center;
+    margin-top: 20px;
 }
 
-.video-seksjon video {
+.video-img {
     width: 100%;
     max-width: 800px;
-    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-block-end: 15px;
 }
 
-.videon-tekst {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 30px;
+footer {
+    background-color: rgb(18, 56, 139);
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10px;
+    color: white;
 }

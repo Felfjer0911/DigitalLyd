@@ -94,3 +94,31 @@ body {
         display: none;
     }
 }
+
+.videobilde {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    padding-block-end: 15px;
+}
+
+footer {
+    background-color: rgb(18, 56, 139);
+    height: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
