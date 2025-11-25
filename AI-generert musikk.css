@@ -1,10 +1,6 @@
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: Arial, Helvetica, sans-serif;
     background: #eaeaea;
     font-size: 15px;
@@ -18,26 +14,6 @@ body {
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
-}
-
-
-.top {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    border-bottom: 1px solid #c7c7c7;
-}
-
-.top img {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.top nav {
-    margin: 5px 0;
 }
 
 .content {
@@ -94,8 +70,7 @@ body {
 
 .høyre p {
     margin-bottom: 20px;
-    line-height: 1.7;
-    max-width: 70ch;
+
 }
 
 img {
@@ -139,12 +114,6 @@ img:hover {
     .høyre-ad {
         left: auto;
         right: auto;
-    }
-}
-
-@media (max-width: 1100px) {
-    .side-ad {
-        display: none;
     }
 }
 
