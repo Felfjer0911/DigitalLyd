@@ -1,11 +1,12 @@
 main {
+    padding-top: 60px;
     background-color: #f3f4f4;
 }
 
 h1 {
     color: white;
-    font-size: xx-large;
     text-align: center;
+    font-size: 100px;
 }
 
 .overskrift {
@@ -13,7 +14,7 @@ h1 {
     background-size: cover;
     background-position: center center;
     margin: auto;
-    width: 1000px;
+    width: 1300px;
     height: 500px;
     display: flex;
     align-items: last baseline;
@@ -25,7 +26,7 @@ h1 {
 .h1 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    font-size: 70px;
+    
 }
 
 .s1 {
@@ -170,4 +171,45 @@ button {
 
 .fa-magnifying-glass-minus{
     font-size: x-large;
+}
+
+footer{
+    background-color: #56d3ed;
+}
+
+.om{
+    padding-top: 50px;
+    margin: auto;
+    width: 70%;
+    padding-bottom: 30px;
+}
+
+.fh2{
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: black solid 1px;
+    margin-bottom: 10px;
+}
+
+.fp{
+    text-align: center;
+}
+
+.copyright{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 70px;
+    margin-left: 50px;
+}
+
+.copyright h2{
+    border-right: black solid 1px;
+    padding-right: 10px;
+}
+
+.copyright p{
+    padding-top: 5px;
+    padding-left: 10px;
 }
